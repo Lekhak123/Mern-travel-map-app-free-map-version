@@ -34,7 +34,7 @@ try {
                 <input type="text" placeholder="username" ref={nameRef}/>
                 <input type="password" placeholder="password" ref={passwordRef}/>
                 <button className="loginbtn">Login</button>
-
+ {failure &&  <span className="failure">Something went wrong :(</span>}
            </form>
            <Cancel className="loginCancel" onClick={()=>setshowLogin(false)}/>
         </div>
